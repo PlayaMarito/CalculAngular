@@ -1,11 +1,16 @@
+<h1>CalculAngular</h1>
 
 <div>
+  <p>Ingrese el primer número</p>
   <input type="text" placeholder="Ingrese un número" [(ngModel)] = 'numero1'>
+  <p>Ingrese el segundo número</p>
   <input type="text" placeholder="Ingrese otro número" [(ngModel)] = 'numero2'>
 </div>  
 
 <div>
-  <button (click)="sumar()">Sumar</button>
+  <p>¿Qué operación desea realizar?</p>
+  
+  <button (click)="sumar()" >SUMAR</button>
   <button (click)="restar()">Restar</button>
   <button (click)="multiplicar()">Multiplicar</button>
   <button (click)="dividir()">Dividir</button>
@@ -13,5 +18,5 @@
 </div>
 
 <div>
-  <p>Resultado: {{ resultado }}</p>
+  <p>Resultado ==> {{resultado}}</p>
 </div> 
